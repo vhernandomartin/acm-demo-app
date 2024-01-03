@@ -2,7 +2,7 @@
 apiVersion: apps.open-cluster-management.io/v1
 kind: Channel
 metadata:
-  name: redis-master-app-latest
+  name: redis-primary-app-latest
   namespace: guestbook
 spec:
   type: GitHub
