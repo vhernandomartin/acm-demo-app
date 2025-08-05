@@ -25,9 +25,9 @@ spec:
         env:
         - name: GET_HOSTS_FROM
           value: env
-        - name: REDIS_primary_SERVICE_HOST
+        - name: REDIS_LEADER_SERVICE_HOST
           value: redis-primary.guestbook.svc.clusterset.local
-        - name: REDIS_secondary_SERVICE_HOST
+        - name: REDIS_FOLLOWER_SERVICE_HOST
           value: redis-secondary.guestbook.svc.clusterset.local
         ports:
         - containerPort: 80
