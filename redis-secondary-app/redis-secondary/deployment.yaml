@@ -19,7 +19,7 @@ spec:
     spec:
       containers:
       - name: secondary
-        image: gcr.io/google-samples/gb-redisslave:v1
+        image: gcr.io/google-samples/gb-redis-secondary:v1
         resources:
           requests:
             cpu: 100m
@@ -27,7 +27,7 @@ spec:
         env:
         - name: GET_HOSTS_FROM
           value: env
-        - name: REDIS_primary_SERVICE_HOST
+        - name: REDIS_MASTER_SERVICE_HOST
           value: redis-primary.guestbook.svc.clusterset.local
         ports:
         - containerPort: 6379
